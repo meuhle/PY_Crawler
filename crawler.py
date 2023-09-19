@@ -47,8 +47,7 @@ def scanURL(UR,cont):
                                     #print(link.get('href'))
                                             time.sleep(0.2)
                                     scanURL(link.get('href'),cont)
-    except:
-        print("An exception occurred")
+    except Exception as e: print(e)
 
 scanURL(URL,0)
 
